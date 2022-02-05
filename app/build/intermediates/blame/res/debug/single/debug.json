@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/puneetkapoor/AndroidStudioProjects/MVI projects/android-sample-mvi/app/build/intermediates/res/merged/debug/drawable_spacexlogo.png.flat",
+        "source": "/Users/puneetkapoor/AndroidStudioProjects/MVI projects/android-sample-mvi/app/src/main/res/drawable/spacexlogo.png"
+    },
+    {
+        "merged": "/Users/puneetkapoor/AndroidStudioProjects/MVI projects/android-sample-mvi/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/puneetkapoor/AndroidStudioProjects/MVI projects/android-sample-mvi/app/src/main/res/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/puneetkapoor/AndroidStudioProjects/MVI projects/android-sample-mvi/app/build/intermediates/res/merged/debug/layout_splash_fragment.xml.flat",
+        "source": "/Users/puneetkapoor/AndroidStudioProjects/MVI projects/android-sample-mvi/app/src/main/res/layout/splash_fragment.xml"
+    }
+]

@@ -1,0 +1,51 @@
+com/androidmvi/spacex/ui/databinding/RocketsListItemBinding.java
+ com.androidmvi.spacex.ui.databinding.RocketsListItemBinding
+com/androidmvi/spacex/ui/fragments/RocketListFragment_MembersInjector.java
+ com.androidmvi.spacex.ui.fragments.RocketListFragment_MembersInjector
+com/androidmvi/spacex/ui/injection/ViewModelKey.java
+ com.androidmvi.spacex.ui.injection.ViewModelKey
+hilt_aggregated_deps/_com_androidmvi_spacex_ui_fragments_RocketDetailsFragment_GeneratedInjector.java
+ hilt_aggregated_deps._com_androidmvi_spacex_ui_fragments_RocketDetailsFragment_GeneratedInjector
+com/androidmvi/spacex/ui/databinding/RocketsListFragmentBinding.java
+ com.androidmvi.spacex.ui.databinding.RocketsListFragmentBinding
+hilt_aggregated_deps/_com_androidmvi_spacex_ui_MainActivity_GeneratedInjector.java
+ hilt_aggregated_deps._com_androidmvi_spacex_ui_MainActivity_GeneratedInjector
+com/androidmvi/spacex/ui/fragments/Hilt_RocketDetailsFragment.java
+ com.androidmvi.spacex.ui.fragments.Hilt_RocketDetailsFragment
+com/androidmvi/spacex/ui/fragments/RocketListFragment_GeneratedInjector.java
+ com.androidmvi.spacex.ui.fragments.RocketListFragment_GeneratedInjector
+hilt_aggregated_deps/_com_androidmvi_spacex_ui_injection_ViewModuleInjects.java
+ hilt_aggregated_deps._com_androidmvi_spacex_ui_injection_ViewModuleInjects
+com/androidmvi/spacex/ui/databinding/RocketLaunchDetailsItemBinding.java
+ com.androidmvi.spacex.ui.databinding.RocketLaunchDetailsItemBinding
+com/androidmvi/spacex/ui/fragments/RocketDetailsFragment_MembersInjector.java
+ com.androidmvi.spacex.ui.fragments.RocketDetailsFragment_MembersInjector
+com/androidmvi/spacex/ui/databinding/RocketDetailsFragmentBinding.java
+ com.androidmvi.spacex.ui.databinding.RocketDetailsFragmentBinding
+com/androidmvi/spacex/ui/Hilt_MainActivity.java
+ com.androidmvi.spacex.ui.Hilt_MainActivity
+ com.androidmvi.spacex.ui.Hilt_MainActivity$1
+com/androidmvi/spacex/ui/viewmodel/RocketListViewModel_Factory.java
+ com.androidmvi.spacex.ui.viewmodel.RocketListViewModel_Factory
+com/androidmvi/spacex/ui/injection/ViewModuleInjects_RocketDetailsViewModelFactory.java
+ com.androidmvi.spacex.ui.injection.ViewModuleInjects_RocketDetailsViewModelFactory
+com/androidmvi/spacex/ui/fragments/Hilt_RocketListFragment.java
+ com.androidmvi.spacex.ui.fragments.Hilt_RocketListFragment
+hilt_aggregated_deps/_com_androidmvi_spacex_ui_fragments_RocketListFragment_GeneratedInjector.java
+ hilt_aggregated_deps._com_androidmvi_spacex_ui_fragments_RocketListFragment_GeneratedInjector
+com/androidmvi/spacex/ui/injection/ViewModuleInjects_RocketListViewModelFactory.java
+ com.androidmvi.spacex.ui.injection.ViewModuleInjects_RocketListViewModelFactory
+com/androidmvi/spacex/ui/BuildConfig.java
+ com.androidmvi.spacex.ui.BuildConfig
+com/androidmvi/spacex/ui/fragments/RocketDetailsFragment_GeneratedInjector.java
+ com.androidmvi.spacex.ui.fragments.RocketDetailsFragment_GeneratedInjector
+com/androidmvi/spacex/ui/viewmodel/RocketDetailsViewModel_Factory.java
+ com.androidmvi.spacex.ui.viewmodel.RocketDetailsViewModel_Factory
+com/androidmvi/spacex/ui/databinding/RocketLaunchDetailsHeaderBinding.java
+ com.androidmvi.spacex.ui.databinding.RocketLaunchDetailsHeaderBinding
+com/androidmvi/spacex/ui/injection/CustomViewModelFactory_Factory.java
+ com.androidmvi.spacex.ui.injection.CustomViewModelFactory_Factory
+com/androidmvi/spacex/ui/MainActivity_GeneratedInjector.java
+ com.androidmvi.spacex.ui.MainActivity_GeneratedInjector
+com/androidmvi/spacex/ui/databinding/BaseActivityBinding.java
+ com.androidmvi.spacex.ui.databinding.BaseActivityBinding

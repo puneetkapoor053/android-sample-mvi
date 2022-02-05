@@ -25,7 +25,7 @@ Used OKHTTP, Retrofit and Rx for API calls and background execution.
 
 ### Architectural Pattern
 
-Followed MVVM.
+Followed MVVM / MVI
 
 ### Testing
 

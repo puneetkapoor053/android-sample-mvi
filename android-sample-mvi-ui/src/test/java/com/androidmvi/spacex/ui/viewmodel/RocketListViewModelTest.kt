@@ -45,8 +45,6 @@ class RocketListViewModelTest {
         MockKAnnotations.init(this, relaxed = true)
 
         rocketListViewModel = RocketListViewModel(
-            rocketListUseCase,
-            sharedPreferences,
             repository
         )
     }
@@ -57,8 +55,8 @@ class RocketListViewModelTest {
         every { rocketListUseCase.getRocketList() } returns Single.just(listOf(rocketsDomainModel))
         rocketListViewModel.getRocketList()
 
-        val stateData: StateData<List<GetRocketsDomainModel>>? =
-            rocketListViewModel.getRocketListViewModelObservable().value
+        val stateData: StateData<MainViewState>? =
+            rocketListViewModel.viewState.value
 
         assertThat(stateData).isNotNull
     }
@@ -69,38 +67,8 @@ class RocketListViewModelTest {
         every { rocketListUseCase.getRocketList() } returns Single.error(Throwable())
         rocketListViewModel.getRocketList()
 
-        val stateData: StateData<List<GetRocketsDomainModel>>? =
-            rocketListViewModel.getRocketListViewModelObservable().value
-
-        assertThat(stateData).isNotNull
-    }
-
-    @Test
-    fun `return first launch data false if not a first launch`() {
-
-        every { sharedPreferences.getBoolean(FIRST_LAUNCH, true) } returns false
-        every { rocketListUseCase.getRocketList() } returns Single.just(listOf(rocketsDomainModel))
-
-        rocketListViewModel.checkIfFirstLaunch(FIRST_LAUNCH)
-        val stateData: StateData<Boolean>? =
-            rocketListViewModel.getFirstLaunchDataObservable().value
-        val stateRocketData: StateData<List<GetRocketsDomainModel>>? =
-            rocketListViewModel.getRocketListViewModelObservable().value
-
-        assertThat(stateData).isNull()
-        assertThat(stateRocketData).isNotNull
-
-        `when`(sharedPreferences.getBoolean(FIRST_LAUNCH, true)).thenReturn(false)
-    }
-
-    @Test
-    fun `return first launch data true if first launch`() {
-
-        every { sharedPreferences.getBoolean(FIRST_LAUNCH, true) } returns true
-
-        rocketListViewModel.checkIfFirstLaunch(FIRST_LAUNCH)
-        val stateData: StateData<Boolean>? =
-            rocketListViewModel.getFirstLaunchDataObservable().value
+        val stateData: StateData<MainViewState>? =
+            rocketListViewModel.viewState.value
 
         assertThat(stateData).isNotNull
     }
@@ -111,11 +79,11 @@ class RocketListViewModelTest {
 
         rocketListViewModel.filterBasedOnStatus(RocketListViewModel.Status.Active.toString())
 
-        val stateRocketData: StateData<List<GetRocketsDomainModel>>? =
-            rocketListViewModel.getRocketListViewModelObservable().value
+        val stateData: StateData<MainViewState>? =
+            rocketListViewModel.viewState.value
 
-        assertThat(stateRocketData).isNotNull
-        assertThat(stateRocketData?.getData()?.size).isEqualTo(2)
+        assertThat(stateData).isNotNull
+        assertThat(stateData?.getData()?.rockets?.size).isEqualTo(2)
     }
 
     @Test
@@ -124,11 +92,11 @@ class RocketListViewModelTest {
 
         rocketListViewModel.filterBasedOnStatus(RocketListViewModel.Status.InActive.toString())
 
-        val stateRocketData: StateData<List<GetRocketsDomainModel>>? =
-            rocketListViewModel.getRocketListViewModelObservable().value
+        val stateData: StateData<MainViewState>? =
+            rocketListViewModel.viewState.value
 
-        assertThat(stateRocketData).isNotNull
-        assertThat(stateRocketData?.getData()?.size).isEqualTo(1)
+        assertThat(stateData).isNotNull
+        assertThat(stateData?.getData()?.rockets?.size).isEqualTo(1)
     }
 
     @Test
@@ -137,11 +105,11 @@ class RocketListViewModelTest {
 
         rocketListViewModel.filterBasedOnStatus("All")
 
-        val stateRocketData: StateData<List<GetRocketsDomainModel>>? =
-            rocketListViewModel.getRocketListViewModelObservable().value
+        val stateData: StateData<MainViewState>? =
+            rocketListViewModel.viewState.value
 
-        assertThat(stateRocketData).isNotNull
-        assertThat(stateRocketData?.getData()?.size).isEqualTo(3)
+        assertThat(stateData).isNotNull
+        assertThat(stateData?.getData()?.rockets?.size).isEqualTo(3)
     }
 
     companion object {
